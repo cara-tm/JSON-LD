@@ -1,0 +1,38 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+	"@type": "LocalBusiness",
+	"name": "<txp:site_name />",
+	"address": {
+		"@type": "PostalAddress",
+		"addressCountry": "France",
+		"addressLocality": "XXXXX",
+		"addressRegion": "XXXXX",
+		"postalCode":"XXXXX",
+		"streetAddress": "XXXXX"
+	},
+	"description": "<txp:site_slogan />",
+	"founder": "<txp:author />",
+	"email" : "mailto:<txp:author_email />",
+	"telephone": "+33-XXX-XXX-XXXX",
+	"image": {
+		"@type": "ImageObject",
+		"url": "<txp:site_url />img/logo.jpg",
+		"height": 300,
+		"width": 400
+	},
+	"url": "<txp:site_url />",
+	"priceRange": "€€",
+	"sameAs": [
+  /*! Add, delete, set your Social Network links below, then remove this comment line */
+		"//www.facebook.com/your-profile",
+		"//www.twitter.com/your-profile",
+		"//plus.google.com/your-profile"
+	],
+	"potentialAction": {
+		"@type": "SearchAction", 
+		"target": "<txp:site_url />recherche?q={q}",
+		"query-input": "required name=search_term"
+    }
+}
+</script>
