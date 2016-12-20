@@ -1,0 +1,50 @@
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "WebPage",
+	"breadcrumb": "Home Page <txp:breadcrumb label="" separator=" > " link="0" wraptag="" />",
+	"mainEntity":
+	[
+	{
+		"@type": "BookStore",
+		"name": "<txp:site_name />",
+		"telephone": "+33 XXX-XXX-XXX",
+		"address": {
+			"@type": "PostalAddress",
+			"addressCountry": "France",
+			"addressLocality": "XXXX",
+			"addressRegion": "XXXX",
+			"postalCode":"XXXX",
+			"streetAddress": "XXXX"
+		},
+        	"priceRange": "€€",
+		"image": "<txp:site_url />img/logo.png"
+	},<txp:article limit="10" status="life">
+	{
+		"@type": "Book",
+		"name": "<txp:title />",
+		"author": {
+			"@type": "Person",
+			"name" : "<txp:author />",
+			"url": "<txp:author format="url" />"
+		},
+		"inLanguage": "French",
+		"numberOfPages": "XXX",
+		"isbn": "XXXXXXXXXX",
+		"bookFormat": "<txp:if_custom_field name="Format" value="eBook">http://schema.org/EBook<txp:else />http://schema.org/PaperBack</txp:if_custom_field>",
+		<txp:if_article_image>"image": "<txp:images><txp:image_url /></txp:images>",</txp:if_article_image>
+		<txp:if_excerpt>"description" : "<txp:php>
+		/*
+		 * Retrieve the plain text excerpt version from the 'textpattern' table.
+		 */
+		echo safe_field('Excerpt', 'textpattern', 'ID = "'.article_id(array()).'"');</txp:php>",</txp:if_excerpt>
+		"offers":
+		{
+			"@type": "Offer",
+			"price": "<txp:custom_field name="Price" />",
+			"priceCurrency": "EUR"
+		}
+	}<txp:if_last_article><txp:else />,</txp:if_last_article></txp:article>
+	]
+}
+</script>
