@@ -1,0 +1,42 @@
+<script type="application/ld+json">
+{ 
+	"@context": "http://schema.org",
+	"@type": "WebSite",
+	"url": "<txp:site_url />",
+	"potentialAction": {
+		"@type": "SearchAction",
+		"target": "<txp:site_url />?q={q}",
+		"query-input": "required name=search_term"
+	},
+	"creator" : {
+		"@type": "Person",
+/*! To display the administrator's real name, delete the "group" attribute and replace it by offset="1" */
+		"name": "<txp:authors group="managing_editor" limit="1" wraptag="" break=""><txp:author /></txp:authors>",
+		"url": "<txp:site_url />",
+		"sameAs": [
+/*! Add, delete, set your Social Network links below, then remove this comment line */
+			"//www.facebook.com/your-profile",
+			"//twitter.com/your-profile",
+			"//github.com/your-profile",
+			"//plus.google.com/your-profile",
+			"//in.linkedin.com/in/your-profile",
+			"//www.youtube.com/user/your-profile"
+		]
+/*! Your skills here or remove this commented part
+		,"makesOffer" : {
+			"@type" : "Offer",
+			"itemOffered" : [
+				{
+				"@type" : "Product",
+				"name" : "Web Development"
+				},
+				{
+				"@type" : "Product",
+				"name" : "Textpattern CMS Specialist"
+				}
+			]
+		}
+*/
+	}
+}   
+</script>
