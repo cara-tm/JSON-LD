@@ -1,0 +1,19 @@
+<txp:if_individual_article><script type="application/ld+json">
+{
+	"@context": "http://schema.org/",
+	"@type": "Person",
+	"image": "<txp:site_url />img/<txp:php>
+	/*! Set the author's image with its lowercase name in JPG format */
+	echo str_replace(' ', '-', strtolower(author(array())));
+	</txp:php>.jpg",
+	"name": "<txp:authors limit="1" offset="1" wraptag="" break=""><txp:author /></txp:authors>",
+	"email": "<txp:author_email />",
+	"url": "<txp:author format="url" />"
+/*! Set the colleague URLs here or delete this part
+	,"colleague": [
+		"http://www.example.com/JohnColleague.html",
+		"http://www.example.com/JameColleague.html"
+*/
+      ],
+}
+</script></txp:if_individual_article>
