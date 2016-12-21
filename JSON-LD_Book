@@ -55,10 +55,8 @@ global $variable;
 </txp:php>' />	{
 			"@type": "ListItem",
 			"position": <txp:variable name="counter" />,
-			"item": {
-				"@id": "<txp:section link="0" url="1" />",
-				"name": "<txp:section title />"
-			}
+			"@id": "<txp:section link="0" url="1" />",
+			"name": "<txp:section title />"
 		</txp:section_list>}
 		]
 	}
