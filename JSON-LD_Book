@@ -44,7 +44,24 @@
 			"price": "<txp:custom_field name="Price" />",
 			"priceCurrency": "EUR"
 		}
-	}<txp:if_last_article><txp:else />,</txp:if_last_article></txp:article>
+	},</txp:article>
+	{
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		<txp:section_list exclude="XXXXX" wraptag="" break="},">
+<txp:variable name="counter" value='<txp:php>
+global $variable;
+++$variable['counter'];
+</txp:php>' />	{
+			"@type": "ListItem",
+			"position": <txp:variable name="counter" />,
+			"item": {
+				"@id": "<txp:section link="0" url="1" />",
+				"name": "<txp:section title />"
+			}
+		</txp:section_list>}
+		]
+	}
 	]
 }
 </script>
