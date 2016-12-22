@@ -13,8 +13,10 @@ i.e.
 
     <txp:output_form form="JSON-LD_Person" />
 
+The JSON-LD snippets (only one or multiples) can be added before the last `</head>` part of your HTML template or just before the last `</body>` tag.
 
-## Snippet list and purpose
+
+## Snippets list and purpose
 
 Note: check the snippet content and replace the `XXXX` where signs appaer by the information needed. The commented parts (included into `/*!` ... `*/`) are optional and can be deleted.
 
