@@ -13,7 +13,7 @@
 	,"colleague": [
 		"http://www.example.com/JohnColleague.html",
 		"http://www.example.com/JameColleague.html"
-*/
       ],
+*/
 }
 </script></txp:if_individual_article>
