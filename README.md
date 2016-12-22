@@ -29,4 +29,8 @@ Note: check the snippet content and replace the `XXXX` where signs appaer by the
 
 ## About JSON-LD
 
-(coming soon)
+The JSON-LD structured data graph is the latest technology recommended by Google and replace the old microdata markup. It is the prefered choice by SEO specialists because all the informations are located into a unique javascript array, never more within the entire HTML document: simple acess and all change are made easier.
+
+[Google dedicated online documentation](https://developers.google.com/schemas/formats/json-ld)
+
+[The Google Official Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool)
