@@ -3,8 +3,8 @@
 	"@context": "http://schema.org/",
 	"@type": "Person",
 	"image": "<txp:site_url />img/<txp:php>
-	/*! Set the author's image with its lowercase name in JPG format */
-	echo str_replace(' ', '-', strtolower(author(array())));
+	/*! Set the author's image with its lowercase name (default: JPG format or change the extention) */
+	echo stripSpace(author(array()), 1);
 	</txp:php>.jpg",
 	"name": "<txp:authors limit="1" offset="1" wraptag="" break=""><txp:author /></txp:authors>",
 	"email": "<txp:author_email />",
