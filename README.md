@@ -29,7 +29,7 @@ Note: check the snippet content and replace the `XXXX` where signs appaer by the
 
 ## About JSON-LD
 
-The JSON-LD ("JSON for Linking Data") structured data graph is the latest technology recommended by Google and replace the old microdata markup. It is the prefered choice by SEO specialists because all the informations are located into a unique javascript JSON array, never more within the entire HTML document: simple acess and all changes are made easier.
+The JSON-LD ("JSON for Linking Data") structured data graph for machines (Crawler Bots) is the latest technology recommended by Google and replace the old microdata markup. It is the prefered choice by SEO specialists because all the informations are located into a unique javascript JSON array, never more within the entire HTML document: simple acess and all changes are made easier.
 
 [Google dedicated online documentation](https://developers.google.com/schemas/formats/json-ld)
 
