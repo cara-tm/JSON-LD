@@ -1,0 +1,34 @@
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "WebPage",
+	"breadcrumb": "Home Page <txp:breadcrumb label="" separator=" > " link="0" wraptag="" />",
+	"mainEntityOfPage": [
+	<txp:article_custom section='<txp:section />' limit="10" status="live">{
+		"@type": "Blog",
+		"headline": "<txp:title />",
+		"url": "<txp:permlink />",
+		"datePublished" : "<txp:posted gmt="1" format="%Y-%d-%mT%T" />",
+		"dateModified": "<txp:modified gmt="1" format="%Y-%d-%mT%T" />",
+		"inLanguage": "<txp:lang />",
+		"author": {
+			"@type": "Person",
+			"name" : "<txp:author />",
+			"url": "<txp:author format="url" />"
+		}
+		<txp:if_article_image>,"image": {
+			"@type": "ImageObject",
+			"url": "<txp:images><txp:image_url /></txp:images>",
+			"height": <txp:images><txp:image_info type="h" /></txp:images>,
+			"width": <txp:images><txp:image_info type="w" /></txp:images>
+		}</txp:if_article_image>
+	<txp:if_excerpt>,"description" : "<txp:php>
+		/**
+		 * Retrieve the plain text excerpt version from the 'textpattern' table.
+		 */
+		echo safe_field('Excerpt', 'textpattern', 'ID = "'.article_id(array()).'"');</txp:php>"</txp:if_excerpt>
+	}<txp:if_last_article><txp:else />,</txp:if_last_article></txp:article_custom>
+	]
+    }
+}
+</script>
