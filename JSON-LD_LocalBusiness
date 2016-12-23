@@ -30,9 +30,9 @@
 		"//plus.google.com/your-profile"
 	],
 	"potentialAction": {
-		"@type": "SearchAction", 
-		"target": "<txp:site_url />recherche?q={q}",
-		"query-input": "required name=search_term"
-    }
+		"@type": "SearchAction",
+		"target": "<txp:site_url />?q={search_term_string}",
+		"query-input": "required name=search_term_string"
+	}
 }
 </script>
