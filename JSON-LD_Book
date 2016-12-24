@@ -31,6 +31,7 @@
 		"inLanguage": "<txp:custom_field name="Language" />",
 		"numberOfPages": "<txp:custom_field name="Pages" />",
 		"isbn": "<txp:custom_field name="ISBN" />",
+		"datePublished": "<txp:posted format="%Y-%m-%d" />",
 		"bookFormat": "<txp:if_custom_field name="Format" value="eBook">http://schema.org/EBook<txp:else />http://schema.org/PaperBack</txp:if_custom_field>",
 		<txp:if_article_image>"image": "<txp:images><txp:image_url /></txp:images>",</txp:if_article_image>
 		<txp:if_excerpt>"description" : "<txp:php>
@@ -42,7 +43,8 @@
 		{
 			"@type": "Offer",
 			"price": "<txp:custom_field name="Price" />",
-			"priceCurrency": "EUR"
+			"priceCurrency": "EUR",
+			<txp:if_custom_field name="Stock">"availability": "http://schema.org/InStock"<txp:else />"availability": "http://schema.org/OutOfStock"</txp:if_custom_field>
 		}
 	},</txp:article>
 	{
