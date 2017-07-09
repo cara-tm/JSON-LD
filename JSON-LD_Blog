@@ -8,7 +8,7 @@
 //
 //   * The "logo" dimensions must not exceed 600x60.
 //
-{
+{<txp:variable name="description" value='<txp:meta_description format="" />' />
 	"@context": "http://schema.org",
 	"@type": "NewsArticle",
 	"mainEntityOfPage": "<txp:permlink />",
