@@ -1,34 +1,42 @@
 <script type="application/ld+json">
+//
+// The document referenced in mainEntityOfPage should be the same as the canonical link above.
+//
+// For example:
+//
+//   * All marked-up URLs should be absolute.
+//
+//   * The "logo" dimensions must not exceed 600x60.
+//
 {
 	"@context": "http://schema.org",
-	"@type": "WebPage",
-	"breadcrumb": "Home Page <txp:breadcrumb label="" separator=" > " link="0" wraptag="" />",
-	"mainEntityOfPage": [
-	<txp:article_custom section='<txp:section />' limit="10" status="live">{
-		"@type": "Blog",
-		"headline": "<txp:title />",
-		"url": "<txp:permlink />",
-		"datePublished" : "<txp:posted gmt="1" format="%Y-%d-%mT%T" />",
-		"dateModified": "<txp:modified gmt="1" format="%Y-%d-%mT%T" />",
-		"inLanguage": "<txp:lang />",
-		"author": {
-			"@type": "Person",
-			"name" : "<txp:author />",
-			"url": "<txp:author format="url" />"
-		}
-		<txp:if_article_image>,"image": {
+	"@type": "NewsArticle",
+	"mainEntityOfPage": "<txp:permlink />",
+	"headline": "<txp:title />",
+	"datePublished": "<txp:posted gmt="1" format="iso8601" />",
+	"dateModified": "<txp:modified gmt="1" format="iso8601" />",
+	"description": "<txp:if_variable name="description" value=""><txp:php>echo strip_tags( safe_field('Excerpt_html', 'textpattern', 'ID = "'.article_id(array()).'"') );</txp:php><txp:else /><txp:meta_description format="" /></txp:if_variable>",
+	"author": {
+		"@type": "Person",
+		"name": "<txp:author />"
+	},
+	"publisher": {
+		"@type": "Organization",
+		"name": "Textpattern",
+		"logo": {
+		// Change infos below accordingly, then remove this comment line
 			"@type": "ImageObject",
-			"url": "<txp:images><txp:image_url /></txp:images>",
-			"height": <txp:images><txp:image_info type="h" /></txp:images>,
-			"width": <txp:images><txp:image_info type="w" /></txp:images>
-		}</txp:if_article_image>
-	<txp:if_excerpt>,"description" : "<txp:php>
-		/**
-		 * Retrieve the plain text excerpt version from the 'textpattern' table.
-		 */
-		echo safe_field('Excerpt', 'textpattern', 'ID = "'.article_id(array()).'"');</txp:php>"</txp:if_excerpt>
-	}<txp:if_last_article><txp:else />,</txp:if_last_article></txp:article_custom>
-	]
-    }
+			"url": "http://textpattern.io/style/textpattern_footer_logo.png",
+			"width": 119,
+			"height": 35
+		}
+	}<txp:if_article_image>,
+	"image": <txp:images limit="1">{
+		"@type": "ImageObject",
+		"url": "<txp:image_url />",
+		"height": <txp:image_info type="h" />,
+		"width": <txp:image_info type="w" />
+	}</txp:images></txp:if_article_image>
 }
 </script>
+</txp:if_individual_article>
