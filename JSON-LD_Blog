@@ -10,22 +10,28 @@
 //
 {<txp:variable name="description" value='<txp:meta_description format="" />' />
 	"@context": "http://schema.org",
-	"@type": "NewsArticle",
+	"@type": "BlogPosting",
 	"mainEntityOfPage": "<txp:permlink />",
-	"headline": "<txp:title />",
+	"headline": "<txp:title escape="json" />",
 	"datePublished": "<txp:posted gmt="1" format="iso8601" />",
 	"dateModified": "<txp:modified gmt="1" format="iso8601" />",
-	"description": "<txp:if_variable name="description" value=""><txp:php>echo strip_tags( safe_field('Excerpt_html', 'textpattern', 'ID = "'.article_id(array()).'"') );</txp:php><txp:else /><txp:meta_description format="" /></txp:if_variable>",
+	"description": "<txp:if_variable name="description" value=""><txp:php>echo strip_tags( safe_field('Excerpt_html', 'textpattern', 'ID = "'.article_id(array()).'"') );</txp:php><txp:else /><txp:meta_description format="" escape="json" /></txp:if_variable>",
+	<txp:if_article_category>"articleSection": "<txp:category1 title="1" link="0" /><txp:if_article_category number="2">, <txp:category2 title="1" link="0" /></txp:if_article_category>",</txp:if_article_category>
+	<txp:if_comments>"commentCount": <txp:comments_count />,
+<txp:comments form="" wraptag="" break="" class="">	"comment": {
+		"text": "<txp:php>
+echo strip_tags(comment_message(array()));
+</txp:php>",
 	"author": {
 		"@type": "Person",
 		"name": "<txp:author />"
 	},
 	"publisher": {
 		"@type": "Organization",
-		"name": "Textpattern",
+		"name": "<txp:site_name />",
 		"logo": {
-		// Change infos below accordingly, then remove this comment line
 			"@type": "ImageObject",
+			// Change infos below accordingly, then remove this comment line
 			"url": "http://textpattern.io/style/textpattern_footer_logo.png",
 			"width": 119,
 			"height": 35
