@@ -1,4 +1,4 @@
-<script type="application/ld+json">
+<txp:if_individual_article><script type="application/ld+json">
 //
 // The document referenced in mainEntityOfPage should be the same as the canonical link above.
 //
@@ -44,5 +44,4 @@ echo strip_tags(comment_message(array()));
 		"width": <txp:image_info type="w" />
 	}</txp:images></txp:if_article_image>
 }
-</script>
-</txp:if_individual_article>
+</script></txp:if_individual_article>
