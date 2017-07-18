@@ -1,6 +1,6 @@
 <txp:if_individual_article><script type="application/ld+json">
 //
-// The document referenced in mainEntityOfPage should be the same as the canonical link above.
+// The document referenced in mainEntityOfPage should be the same as the canonical link.
 //
 // For example:
 //
@@ -8,40 +8,46 @@
 //
 //   * The "logo" dimensions must not exceed 600x60.
 //
-{<txp:variable name="description" value='<txp:meta_description format="" />' />
+// Remove these comment lines.
+//
+{<txp:variable name="description" value='<txp:meta_description format="" escape="json" />' />
 	"@context": "http://schema.org",
 	"@type": "BlogPosting",
 	"mainEntityOfPage": "<txp:permlink />",
 	"headline": "<txp:title escape="json" />",
 	"datePublished": "<txp:posted gmt="1" format="iso8601" />",
 	"dateModified": "<txp:modified gmt="1" format="iso8601" />",
-	"description": "<txp:if_variable name="description" value=""><txp:php>echo strip_tags( safe_field('Excerpt_html', 'textpattern', 'ID = "'.article_id(array()).'"') );</txp:php><txp:else /><txp:meta_description format="" escape="json" /></txp:if_variable>",
-	<txp:if_article_category>"articleSection": "<txp:category1 title="1" link="0" /><txp:if_article_category number="2">, <txp:category2 title="1" link="0" /></txp:if_article_category>",</txp:if_article_category>
-	<txp:if_comments>"commentCount": <txp:comments_count />,
-<txp:comments form="" wraptag="" break="" class="">	"comment": {
-		"text": "<txp:php>
-echo strip_tags(comment_message(array()));
-</txp:php>",
-	"author": {
-		"@type": "Person",
-		"name": "<txp:author />"
-	},
-	"publisher": {
-		"@type": "Organization",
-		"name": "<txp:site_name />",
-		"logo": {
-			"@type": "ImageObject",
-			// Change infos below accordingly, then remove this comment line
-			"url": "http://textpattern.io/style/textpattern_footer_logo.png",
-			"width": 119,
-			"height": 35
-		}
-	}<txp:if_article_image>,
+	"description": "<txp:if_variable name="description" value=""><txp:php>echo strip_tags( safe_field('Excerpt_html', 'textpattern', 'ID = "'.article_id(array()).'"') );</txp:php><txp:else /><txp:variable name="description" /></txp:if_variable>",
+	"articleSection": "<txp:section title="1" />",
+	<txp:if_article_category>"keywords": ["<txp:category1 title="1" link="0" />"<txp:if_article_category number="2">, "<txp:category2 title="1" link="0" /></txp:if_article_category>"],</txp:if_article_category><txp:if_article_image>
 	"image": <txp:images limit="1">{
 		"@type": "ImageObject",
 		"url": "<txp:image_url />",
 		"height": <txp:image_info type="h" />,
 		"width": <txp:image_info type="w" />
-	}</txp:images></txp:if_article_image>
+	},</txp:images></txp:if_article_image>
+	"author": {
+		"@type": "Person",
+		"name": "<txp:author title="1" />"
+	},
+	<txp:if_comments>"commentCount": <txp:comments_count />,
+<txp:comments form="" wraptag="" break="" class="">	"comment": {
+		"text": "<txp:php>
+echo strip_tags(comment_message(array()));
+</txp:php>",
+		"author": {
+			"@type": "Person",
+			"name": "<txp:comment_name link="0" />"
+		}
+	},</txp:comments></txp:if_comments>	"publisher": {
+		"@type": "Organization",
+		"name": "<txp:site_name />",
+		"logo": {
+			"@type": "ImageObject",
+			"url": "http://cdn.ampproject.org/logo.jpg",
+			"width": 600,
+			"height": 60
+		}
+	}
 }
 </script></txp:if_individual_article>
