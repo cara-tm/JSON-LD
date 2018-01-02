@@ -1,0 +1,15 @@
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org", 
+	"@type": "BreadcrumbList", 
+	"itemListElement": [ {<txp:variable name="JSON_counter" value="0" /><txp:section_list include_default="1" sections="comma,separated,list,of,sections" break=",">
+		"@type": "ListItem", 
+		"position": <txp:variable name="JSON_counter" value='<txp:evaluate query=''<txp:variable name="JSON_counter" /> + 1'' />' />, 
+		"item": { 
+			"@id": "<txp:section url="1" />", 
+			"name": "<txp:section title="1" />" 
+		}
+	}</txp:section_list>
+	]
+}
+</script>
