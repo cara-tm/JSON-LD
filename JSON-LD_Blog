@@ -18,7 +18,7 @@
 	"datePublished": "<txp:posted gmt="1" format="iso8601" />",
 	"dateModified": "<txp:modified gmt="1" format="iso8601" />",
 	"description": "<txp:if_variable name="description" value=""><txp:php>echo strip_tags( safe_field('Excerpt_html', 'textpattern', 'ID = "'.article_id(array()).'"') );</txp:php><txp:else /><txp:variable name="description" /></txp:if_variable>",
-	"articleSection": "<txp:section title="1" />",
+	"articleSection": "<txp:section title="1" escape="json" />",
 	<txp:if_article_category>"keywords": ["<txp:category1 title="1" link="0" />"<txp:if_article_category number="2">, "<txp:category2 title="1" link="0" /></txp:if_article_category>"],</txp:if_article_category><txp:if_article_image>
 	"image": <txp:images limit="1">{
 		"@type": "ImageObject",
@@ -28,20 +28,20 @@
 	},</txp:images></txp:if_article_image>
 	"author": {
 		"@type": "Person",
-		"name": "<txp:author title="1" />"
+		"name": "<txp:author title="1" escape="json" />"
 	},
 	<txp:if_comments>"commentCount": <txp:comments_count />,
 <txp:comments form="" wraptag="" break="" class="">	"comment": {
 		"text": "<txp:php>
-echo strip_tags(comment_message(array()));
+echo strip_tags(json_encode(comment_message(array())));
 </txp:php>",
 		"author": {
 			"@type": "Person",
-			"name": "<txp:comment_name link="0" />"
+			"name": "<txp:comment_name link="0" escape="json" />"
 		}
 	},</txp:comments></txp:if_comments>	"publisher": {
 		"@type": "Organization",
-		"name": "<txp:site_name />",
+		"name": "<txp:site_name escape="json" />",
 		"logo": {
 			"@type": "ImageObject",
 			"url": "http://cdn.ampproject.org/logo.jpg",
