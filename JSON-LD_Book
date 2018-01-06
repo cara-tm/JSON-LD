@@ -51,12 +51,9 @@
 	"@type": "BreadcrumbList",
 	"itemListElement": [
 		<txp:section_list exclude="XXXXX" wraptag="" break="},">
-<txp:variable name="counter" value='<txp:php>
-global $variable;
-++$variable['counter'];
-</txp:php>' />	{
+<txp:variable name="Book_counter" value="0" />	{
 			"@type": "ListItem",
-			"position": <txp:variable name="counter" />,
+			"position": <txp:variable name="Book_counter" value='<txp:evaluate query=''<txp:variable name="Book_counter" /> + 1'' />' /><txp:variable name="Book_counter" />,
 			"@id": "<txp:section link="0" url="1" />",
 			"name": "<txp:section title />"
 		</txp:section_list>}
