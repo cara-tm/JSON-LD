@@ -22,10 +22,10 @@
 	},<txp:article limit="10" status="life">
 	{
 		"@type": "Book",
-		"name": "<txp:title />",
+		"name": "<txp:title escape="json" />",
 		"author": {
 			"@type": "Person",
-			"name" : "<txp:author />",
+			"name" : "<txp:author escape="json" />",
 			"url": "<txp:author format="url" />"
 		},
 		"inLanguage": "<txp:custom_field name="Language" />",
@@ -38,7 +38,7 @@
 		/*
 		 * Retrieve the plain text excerpt version from the 'textpattern' table.
 		 */
-		echo safe_field('Excerpt', 'textpattern', 'ID = "'.article_id(array()).'"');</txp:php>",</txp:if_excerpt>
+		echo json_encode(safe_field('Excerpt', 'textpattern', 'ID = "'.article_id(array()).'"'));</txp:php>",</txp:if_excerpt>
 		"offers":
 		{
 			"@type": "Offer",
