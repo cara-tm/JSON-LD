@@ -7,7 +7,7 @@
 	[
 	{
 		"@type": "BookStore",
-		"name": "<txp:site_name />",
+		"name": "<txp:site_name escape="json" />",
 		"telephone": "+33 XXX-XXX-XXX",
 		"address": {
 			"@type": "PostalAddress",
@@ -55,7 +55,7 @@
 			"@type": "ListItem",
 			"position": <txp:variable name="Book_counter" value='<txp:evaluate query=''<txp:variable name="Book_counter" /> + 1'' />' /><txp:variable name="Book_counter" />,
 			"@id": "<txp:section link="0" url="1" />",
-			"name": "<txp:section title />"
+			"name": "<txp:section title="1" escape="json" />"
 		</txp:section_list>}
 		]
 	}
