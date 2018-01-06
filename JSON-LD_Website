@@ -3,8 +3,8 @@
 	"@context": "http://schema.org",
 	"@type": "WebSite",
 	"url": "<txp:site_url />",
-	"name": "<txp:site_name />",
-	"description": "<txp:site_slogan />",
+	"name": "<txp:site_name escape="json" />",
+	"description": "<txp:site_slogan escape="json" />",
 	"creator" : {
 		"@type": "Person",
 /*! To display the administrator's real name, delete the "group" attribute and replace it by offset="1" */
