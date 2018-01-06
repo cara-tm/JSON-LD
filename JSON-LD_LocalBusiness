@@ -2,7 +2,7 @@
 {
   "@context": "http://schema.org/",
 	"@type": "LocalBusiness",
-	"name": "<txp:site_name />",
+	"name": "<txp:site_name escape="json" />",
 	"address": {
 		"@type": "PostalAddress",
 		"addressCountry": "France",
@@ -11,8 +11,8 @@
 		"postalCode":"XXXXX",
 		"streetAddress": "XXXXX"
 	},
-	"description": "<txp:site_slogan />",
-	"founder": "<txp:author />",
+	"description": "<txp:site_slogan escape="json" />",
+	"founder": "<txp:author escape="json" />",
 	"email" : "mailto:<txp:author_email />",
 	"telephone": "+33-XXX-XXX-XXXX",
 	"image": {
