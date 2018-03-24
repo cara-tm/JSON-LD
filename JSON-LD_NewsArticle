@@ -1,0 +1,42 @@
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "<txp:permlink />"
+    },
+    "publisher": 
+    {
+        "url": "<txp:site_url />",
+        "logo": {
+             "@type": "ImageObject",
+            "url": "<txp:site_url />img/logo-meta.png",
+            "width": "130",
+            "height": "60"
+        },
+        "@type": "Organization",
+        "name": "<txp:site_name escape="json" />"
+    },
+    "description": "<txp:meta_description escape="json" />",
+    "author":
+        [
+            {
+                "url": "<txp:author link="1" format="url" />",
+                "@type": "Person",
+                "name": "<txp:author this_section="1" title="1" />
+            }
+        ],
+    "headline": "<txp:title escape="json" />,
+    <txp:if_article_image>"image": {
+        "@type": "ImageObject",
+        "url": "<txp:image_url id='<txp:custom_field name="article_image" />' />",
+        "width": "<txp:images id='<txp:custom_field name="article_image" />' limit="1"><txp:image_info type="w" /><txp:images>",
+        "height": "<txp:images id='<txp:custom_field name="article_image" />' limit="1"><txp:image_info type="h" /><txp:images>"
+    },</txp:if_article_image>
+    "datePublished": "<txp:posted gmt="1" format="iso8601" />",
+    "keywords": "<txp:meta_keywords escape="json" format="" separator="," />",
+    "dateCreated": "<txp:posted gmt="1" format="iso8601" />",
+    "dateModified": "<txp:modified gmt="1" format="iso8601" />"
+}
+</script>
