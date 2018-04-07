@@ -9,7 +9,7 @@
 		"@type": "Person",
 /*! To display the administrator's real name, delete the "group" attribute and replace it by offset="1" */
 		"name": "<txp:authors group="managing_editor" limit="1" wraptag="" break=""><txp:author /></txp:authors>",
-		"url": "<txp:author_url />",
+		"url": "<txp:if_article_list><txp:site_url /><txp:else /><txp:author format="link" link="1" /></txp:if_article_list>",
 		"sameAs": [
 /*! Add, delete, set your Social Network links below, then remove this comment line */
 			"//www.facebook.com/your-profile",
