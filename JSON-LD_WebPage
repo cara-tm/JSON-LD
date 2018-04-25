@@ -1,0 +1,36 @@
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "name": "<txp:site_name /> <txp:slogan />",
+    "url": "<txp:site_url />",
+    "description": "<txp:description format="json" />",
+    <txp:if_individual_article>"mainEntity": {
+        "@type": "Article",
+        "@id": "<txp:section url="1" escape="json" />",
+        "datePublished": "<txp:posted gmt="1" format="iso8601" />",
+        "dateCreated": "<txp:posted gmt="1" format="iso8601" />",
+        "dateModified": "<txp:modified gmt="1" format="iso8601" />",
+        "mainEntityOfPage": "<txp:permlink />",
+        "headline": "<txp:title />",<txp:if_article_image>
+        "image": <txp:images limit="1">{
+            "@type": "imageObject",
+            "url": "<txp:site_url />img/",
+            "height": "<txp:image_info type="h" />",
+            "width": "<txp:image_info type="w" />"
+        },</txp:images></txp:if_article_image>
+        "author": {
+            "@type": "Organization",
+            "name": "<txp:meta_author format="" title="1" />"
+        },</txp:if_individual_article>
+        "publisher": {
+            "@type": "Organization",
+            "name": "<txp:site_name />",
+            "logo": {
+                "@type": "imageObject",
+                "url": "<txp:site_url />img/logo.png"
+            }
+        }
+    }
+}
+</script>
