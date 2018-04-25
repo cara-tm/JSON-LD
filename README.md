@@ -30,6 +30,7 @@ Note: check the snippet content and replace the `XXXX` where signs appaer by the
 + **JSON-LD_NewsArticle**: a data graph for individual article news.
 + **JSON-LD_Person**: a data graph for individual articles with the author informations. Name, author's URL, address email, its image, and a optional URL list of its colleagues.
 + **JSON-LD_Photograph**: a data graph for photographers.
++ **JSON-LD_Restaurant**: a data graph suitable for a restaurant.
 + **JSON-LD_WebPage**: a data graph for general purpose web pages.
 + **JSON-LD_Website**: a general purpose for personal websites with the website's author name and its URL, social network's list of links, technological skills and the search page which Google can adds into the SERP.
 
