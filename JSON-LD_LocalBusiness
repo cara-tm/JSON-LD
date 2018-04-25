@@ -22,7 +22,9 @@
 		"width": 400
 	},
 	"url": "<txp:site_url />",
-	"priceRange": "€€",
+	"priceRange": "€€€",
+	"openingHours": [ "Mo-Fr 09:00-19:00", "Sa 10:00-19:00" ],
+	"hasmap" : "https://www.google.co.uk/maps/place/map-location",
 	"sameAs": [
   /*! Add, delete, set your Social Network links below, then remove this comment line */
 		"//www.facebook.com/your-profile",
