@@ -28,7 +28,9 @@
             "name": "<txp:site_name />",
             "logo": {
                 "@type": "imageObject",
-                "url": "<txp:site_url />img/logo.png"
+                "url": "<txp:site_url />img/logo.png",
+                "height": "60",
+                "width": "160"
             }
         }
     }
