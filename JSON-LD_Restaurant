@@ -5,13 +5,13 @@
   },
   "@graph": [
     {
-      "@id": "<txp:site_url />",
+      "@id": "<txp:site_url />#organization",
       "@type": "Organization",
       "name": "<txp:site_name />",
 	  "url" : "<txp:site_url />",
 	  "logo" : "<txp:site_url />img/your-logo.png",
       "sameAs" : [
-            "https://www.facebook.com/xxx",
+	  "https://www.facebook.com/xxx",
           "https://twitter.com/xxx",
           "https://plus.google.com/+xxx",
           "https://www.youtube.com/user/xxx"
@@ -19,7 +19,7 @@
     },
     {
       "@type": "Restaurant",
-      "priceRange": "$$$",
+      "priceRange": "$10-$60",
       "servesCuisine": "Burgers, Pizzas",
       "parentOrganization": {
           "name" : "<txp:site_name />"
