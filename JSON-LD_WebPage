@@ -4,6 +4,7 @@
     "@type": "WebPage",
     "name": "<txp:site_name /> <txp:slogan />",
     "url": "<txp:site_url />",
+    "inLanguage": "en",
     "description": "<txp:description format="json" />",
     <txp:if_individual_article>"mainEntity": {
         "@type": "Article",
