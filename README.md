@@ -48,3 +48,5 @@ The JSON-LD ("JSON for Linking Data") structured data graph for machines (Crawle
 [MOZ website](https://moz.com/blog/using-google-tag-manager-to-dynamically-generate-schema-org-json-ld-tags)
 
 [JSON-LD dedicated website](json-ld.org/)
+
+[https://www.schemaapp.com/tools/jsonld-schema-generator/](Schema App JSON-LD markup online generator)
