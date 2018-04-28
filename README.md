@@ -49,4 +49,4 @@ The JSON-LD ("JSON for Linking Data") structured data graph for machines (Crawle
 
 [JSON-LD dedicated website](json-ld.org/)
 
-[https://www.schemaapp.com/tools/jsonld-schema-generator/](Schema App JSON-LD markup online generator)
+[Schema App JSON-LD markup online generator](https://www.schemaapp.com/tools/jsonld-schema-generator/)
