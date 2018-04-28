@@ -7,7 +7,7 @@ Hight quality handcrafted codes collection. All snippets has been tested success
 
 ## Usage
 
-All snippets can be added into your page templates by invoke a form (support for all contexts: in list or individual article):
+All snippets can be added directly into your page templates or by invoke a form (support for all contexts: in list or individual article):
 
     <txp:output_form form="snippet_name_of_your_choice_here" />
 
