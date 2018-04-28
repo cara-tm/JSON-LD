@@ -15,12 +15,13 @@
     "email":"recipient@example.com",
     "telephone":"(425) 123-4567",
     "openingHours": [
-    /*! Choose your opening date-time: Monday, Tuesday, Wenesday, Thursday 8am-19pm */
-        "Mo,Tu,We,Th 08:00-19:00"
-    /*! Tuesday and Thursday only 8am-19pm */
+    /*! Choose your opening date-time: Monday, Tuesday, Wenesday, Thursday 8am-19pm and Sunday 10am-12am*/
+        "Monday, Tuesday, Wednesday, Thursday 08:00-19:00", "Sunday 10:00-12:00"
+    /*! Tuesday and Thursday only 8am-19pm 
         "Tu,Th 08:00-19:00"
-    /*! Or from Monday to Sunday 8am-19pm */
+    /*! Or from Monday to Sunday 8am-19pm 
         "Mo-Su 08:00-19:00"
+    */
     ],
     /*! Number of avarage stars rating (1-5) */
     "starRating": "*****",
