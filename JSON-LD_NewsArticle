@@ -4,7 +4,8 @@
     "@type": "NewsArticle",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "<txp:permlink />"
+        "@id": "<txp:permlink />",
+        "inLanguage": "en"
     },
     "publisher": 
     {
@@ -24,10 +25,10 @@
             {
                 "url": "<txp:author link="1" format="url" />",
                 "@type": "Person",
-                "name": "<txp:author this_section="1" title="1" />
+                "name": "<txp:author this_section="1" title="1" />"
             }
         ],
-    "headline": "<txp:title escape="json" />,
+    "headline": "<txp:title escape="json" />",
     <txp:if_article_image>"image": {
         "@type": "ImageObject",
         "url": "<txp:image_url id='<txp:custom_field name="article_image" />' />",
