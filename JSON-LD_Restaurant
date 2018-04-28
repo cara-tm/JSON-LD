@@ -1,60 +1,110 @@
 <script type="application/ld+json">
 {
-  "@context": {
-    "@vocab": "http://schema.org/"
-  },
-  "@graph": [
-    {
-      "@id": "<txp:site_url />#organization",
-      "@type": "Organization",
-      "name": "<txp:site_name />",
-	  "url" : "<txp:site_url />",
-	  "logo" : "<txp:site_url />img/your-logo.png",
-      "sameAs" : [
-	  "https://www.facebook.com/xxx",
-          "https://twitter.com/xxx",
-          "https://plus.google.com/+xxx",
-          "https://www.youtube.com/user/xxx"
-        ] 
-    },
-    {
-      "@type": "Restaurant",
-      "priceRange": "$10-$60",
-      "servesCuisine": "Burgers, Pizzas",
-      "parentOrganization": {
-          "name" : "<txp:site_name />"
-      },
-     "name" : "Your Restaurant Name",
-     "image" : "<txp:site_url />img/your-image.png",
-      "address": {
-          "@type" : "PostalAddress",
-          "streetAddress": "1 The High Street",
-          "addressLocality": "Colchester",
-          "addressRegion": "Essex",
-          "postalCode": "CO1 1AB",
-          "telephone" : "01234 567 891"
-          },
-      "openingHours": [ "Mo-Fr 09:00-18:00", "Sa 10:00-16:00" ],
-      "hasmap" : "https://www.google.co.uk/maps/place/Buckingham+Palace/@"
-    },
-    {
-      "@type": "LocalBusiness",
-      "priceRange": "$$$",
-      "parentOrganization": {
-          "name" : "<txp:site_name />"
-      },
-     "name" : "Your Business Name",
-     "image" : "<txp:site_url />img/your-image.png",
-      "address": {
-          "@type" : "PostalAddress",
-          "streetAddress": "Buckingham Palace",
-          "addressRegion": "London",
-          "postalCode": "SW1A 1AA",
-          "telephone" : "01234 567 891"
-          },
-      "openingHours": [ "Mo-Fr 09:00-18:00", "Sa 10:00-16:00" ],
-      "hasmap" : "https://www.google.co.uk/maps/place/@"
-    }
-  ]
+	"@context": {
+	"@vocab": "http://schema.org/"
+	},
+	"@graph": [
+	{
+		"@id": "<txp:site_url />#organization",
+	"@type": "Organization",
+	"name": "<txp:site_name />",
+	"url" : "<txp:site_url />",
+	"logo" : "<txp:site_url />img/your-logo.png",
+	"sameAs" : [
+		"https://www.facebook.com/xxx",
+		"https://twitter.com/xxx",
+		"https://plus.google.com/+xxx",
+		"https://www.youtube.com/user/xxx"
+	] 
+	},
+	{
+		"@type": "Restaurant",
+		"priceRange": "$10-$60",
+		"servesCuisine": "Burgers, Pizzas",
+		"parentOrganization": {
+		"name" : "<txp:site_name />"
+	},
+	"name" : "Your Restaurant Name",
+	"image" : "<txp:site_url />img/your-image.png",
+	"address": {
+		"@type" : "PostalAddress",
+		"streetAddress": "1 The High Street",
+		"addressLocality": "Colchester",
+		"addressRegion": "Essex",
+		"postalCode": "CO1 1AB",
+		"telephone" : "01234 567 891"
+	},
+	"openingHoursSpecification": [
+	{
+		"@type": "OpeningHoursSpecification",
+		"dayOfWeek": [
+			"Monday",
+			"Tuesday",
+			"Wednesday",
+			"Thursday",
+			"Friday"
+		],
+		"opens": "11:00",
+		"closes": "15:00"
+	},
+	{
+		"@type": "OpeningHoursSpecification",
+		"dayOfWeek": [
+			"Monday",
+			"Tuesday",
+			"Wednesday",
+			"Thursday",
+			"Friday"
+		],
+		"opens": "19:00",
+		"closes": "23:00"
+	}
+	],
+	"hasmap" : "https://www.google.co.uk/maps/place/Buckingham+Palace/@"
+	},
+	{
+		"@type": "LocalBusiness",
+		"priceRange": "€10-€60",
+		"parentOrganization": {
+		"name" : "<txp:site_name />"
+	},
+	"name" : "Your Business Name",
+	"image" : "<txp:site_url />img/your-image.png",
+	"address": {
+		"@type" : "PostalAddress",
+		"streetAddress": "Buckingham Palace",
+		"addressRegion": "London",
+		"postalCode": "SW1A 1AA",
+		"telephone" : "01234 567 891"
+	},
+	"openingHoursSpecification": [
+	{
+		"@type": "OpeningHoursSpecification",
+		"dayOfWeek": [
+			"Monday",
+			"Tuesday",
+			"Wednesday",
+			"Thursday",
+			"Friday"
+		],
+		"opens": "11:00",
+		"closes": "15:00"
+	},
+	{
+		"@type": "OpeningHoursSpecification",
+		"dayOfWeek": [
+			"Monday",
+			"Tuesday",
+			"Wednesday",
+			"Thursday",
+			"Friday"
+		],
+		"opens": "19:00",
+		"closes": "23:00"
+	}
+	],
+	"hasmap" : "https://www.google.co.uk/maps/place/@"
+	}
+	]
 }
 </script>
