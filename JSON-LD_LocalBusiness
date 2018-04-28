@@ -1,6 +1,7 @@
 <script type="application/ld+json">
 {
-  "@context": "http://schema.org/",
+	"@context": "http://schema.org/",
+	"@id": "<txp:site_url />#localbusiness",
 	"@type": "LocalBusiness",
 	"name": "<txp:site_name escape="json" />",
 	"address": {
