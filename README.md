@@ -23,7 +23,7 @@ The JSON-LD snippets (only one or multiples) can be added before the last `</hea
 Note: check the snippet content and replace the `XXXX` where signs appaer by the information needed. The commented parts (included into `/*!` ... `*/`) are optional and can be deleted.
 
 + **JSON-LD_BedAndBreakfast**: a data graph for logging or B&B.
-+ **JSON-LD_Blog**: a data graph for individual blog article types.
++ **JSON-LD_BlogPosting**: a data graph for individual blog article types.
 + **JSON-LD_Book**: in list or individual article data graph for a book store and its book details (list of different books or an individual book) with current breadcrumb page, list of pages (a breadcrumb list of pages), the local business URL, its postal address, its logo, its email address, its range of prices (default: two digits, € sign); all details for books (few custom fields are required: **Format** with ebook or paperback choices, **Price** for the price without currency symbol, **Pages** for the number of pages, **ISBN** for the ISBN code, **Stock** for availability and **Language**) and the cover images.
 + **JSON-LD_Breadcrumb**: display your navigation structure based on sections into the Google search results (SERP) directly under your site name as  cliquable links into an arrows separated list.
 + **JSON-LD_ItemList**: a graph for your article page to display relationship within related articles (based on their categories).
