@@ -17,7 +17,7 @@
 	"headline": "<txp:title escape="json" />",
 	"datePublished": "<txp:posted gmt="1" format="iso8601" />",
 	"dateModified": "<txp:modified gmt="1" format="iso8601" />",
-	"description": "<txp:if_variable name="description" value=""><txp:php>echo strip_tags( safe_field('Excerpt_html', 'textpattern', 'ID = "'.article_id(array()).'"') );</txp:php><txp:else /><txp:variable name="description" /></txp:if_variable>",
+	"description": "<txp:if_variable name="description" value=""><txp:excerpt escape="p,tidy" format="json" /><txp:else /><txp:variable name="description" /></txp:if_variable>",
 	"articleSection": "<txp:section title="1" escape="json" />",
 	<txp:if_article_category>"keywords": ["<txp:category1 title="1" link="0" />"<txp:if_article_category number="2">, "<txp:category2 title="1" link="0" /></txp:if_article_category>"],</txp:if_article_category><txp:if_article_image>
 	"image": <txp:images limit="1">{
@@ -32,9 +32,7 @@
 	},
 	<txp:if_comments>"commentCount": <txp:comments_count />,
 <txp:comments form="" wraptag="" break="" class="">	"comment": {
-		"text": "<txp:php>
-echo strip_tags(json_encode(comment_message(array())));
-</txp:php>",
+		"text": "<txp:comment_message escape="tidy,p" format="json" />",
 		"author": {
 			"@type": "Person",
 			"name": "<txp:comment_name link="0" escape="json" />"
