@@ -1,31 +1,32 @@
 <script type="application/ld+json">
 {
-    "@context" : "http://schema.org",
-    "@type" : "BedAndBreakfast",
-    "name":"<txp:site_name />",
-    "url":"<txp:site_url />",
-    "image": "<txp:site_url />img/logo.jpg",
-    "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Seattle",
-        "addressRegion": "WA",
-        "postalCode": "98052",
-        "streetAddress": "20341 Whitworth Institute 405 N. Whitworth"
-    },
-    "email":"recipient@example.com",
-    "telephone":"(425) 123-4567",
-    "openingHours": [
-    /*! Choose your opening date-time: Monday, Tuesday, Wenesday, Thursday 8am-19pm and Sunday 10am-12am*/
-        "Monday, Tuesday, Wednesday, Thursday 08:00-19:00", "Sunday 10:00-12:00"
-    /*! Tuesday and Thursday only 8am-19pm 
+	"@context": "http://schema.org",
+	"@type": "BedAndBreakfast",
+	"name": "<txp:site_name />",
+	"url": "<txp:site_url />",
+	"image": "<txp:site_url />img/logo.jpg",
+	"address": {
+		"@type": "PostalAddress",
+		"addressLocality": "Seattle",
+		"addressRegion": "WA",
+		"postalCode": "98052",
+		"streetAddress": "20341 Whitworth Institute 405 N. Whitworth"
+	},
+	"email": "recipient@example.com",
+	"telephone": "(425) 123-4567",
+	"openingHours": [
+	/*! Choose your opening date-time: Monday, Tuesday, Wenesday, Thursday 8am-19pm and Sunday 10am-12am*/
+		"Monday, Tuesday, Wednesday, Thursday 08:00-19:00", "Sunday 10:00-12:00"
+		/*! Tuesday and Thursday only 8am-19pm 
         "Tu,Th 08:00-19:00"
-    /*! Or from Monday to Sunday 8am-19pm 
-        "Mo-Su 08:00-19:00"
-    */
-    ],
-    /*! Number of avarage stars rating (1-5) */
-    "starRating": "*****",
-    "currenciesAccepted": "Euro, Dollar",
-    "paymentAccepted": "Visa, Cash, Credit Card, Check, PayPal",
-    "priceRange" : "$$$"
-} </script>
+		/*! Or from Monday to Sunday 8am-19pm 
+		"Mo-Su 08:00-19:00"
+		*/
+	],
+	/*! Number of avarage stars rating (1-5) */
+	"starRating": "5",
+	"currenciesAccepted": "Euro, Dollar",
+	"paymentAccepted": "Visa, Cash, Credit Card, Check, PayPal",
+	"priceRange" : "$$$"
+}
+</script>

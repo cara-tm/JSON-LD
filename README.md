@@ -41,6 +41,8 @@ The JSON-LD ("JSON for Linking Data") structured data graph for machines (Crawle
 
 [JSON-LD W3C Recommendation](https://www.w3.org/blog/news/archives/3589)
 
+[Bing supports JSON-LD](https://searchengineland.com/bing-announces-bing-amp-viewer-json-ld-support-in-bing-webmaster-tools-300037)
+
 [Google dedicated online documentation](https://developers.google.com/schemas/formats/json-ld)
 
 [The Google Official Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool)
