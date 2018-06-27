@@ -1,0 +1,43 @@
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "Place",
+	"name": "<txp:site_name />",
+	"hasMap": "http://maps.google.com/maps?q=XXX+UK",
+	"telephone": "XXXX XXX XXXX",
+	"image": {
+		"@type": "ImageObject",
+		"url": "<txp:site_url />img/logo.png",
+		"height": "400",
+		"width": "400"
+	},
+	"logo": {
+		"@type": "ImageObject",
+		"url": "<txp:site_url />img/logo.png",
+		"height": "400",
+		"width": "400"
+	},
+	"url": "<txp:site_url />",
+	"sameAs": [
+		"https://twitter.com/XXX",
+		"https://www.linkedin.com/company/XXX",
+		"https://www.instagram.com/XXX",
+		"https://github.com/XXX",
+		"https://youtube.com/XXX",
+		"https://vimeo.com/XXX"
+	],
+	"geo": {
+		"@type": "GeoCoordinates",
+		"latitude": "XX.XXXXXXX",
+		"longitude": "X.XXXXXX"
+	},
+	"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "XX Street Name",
+		"addressLocality": "City",
+		"addressRegion": "Region",
+		"postalCode": "XXXXX",
+		"addressCountry": "UK" 
+	}
+}
+</script>
