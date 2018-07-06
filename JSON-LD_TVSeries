@@ -1,0 +1,34 @@
+<script type="application/ld+json">
+{
+	"@context":"http://schema.org",
+	"@type":"TVSeries",
+	"url":"<txp:permlink />",
+	"contentRating":"16+",
+	"name":"<txp:title />",
+	"description":"<txp:if_description><txp:meta_description format="" escape="json" /><txp:else /><txp:title /></txp:if_description>",
+	"genre":"TV Series",
+	"actors":[
+		{
+			"@type":"Person",
+			"name":"XXX"
+		},
+		{
+			"@type":"Person",
+			"name":"XXX"
+		}
+	],
+	<txp:if_article_image>"image":"<txp:article_image />",</txp:if_article_image>
+	"dateCreated":"AAAA-M-DD",
+	"numberOfSeasons":1,
+	"startDate":"AAAA-M-DD",
+	"creator":[
+		{
+			"@type":"Person",
+			"name":"XXX"
+		},
+		{
+			"@type":"Person",
+			"name":"XXX"
+		}
+	]
+}
