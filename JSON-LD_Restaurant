@@ -5,16 +5,16 @@
 	},
 	"@graph": [
 	{
-		"@id": "<txp:site_url />#organization",
+		"@id": "<txp:site_url escape="json" />#organization",
 	"@type": "Organization",
-	"name": "<txp:site_name />",
-	"url" : "<txp:site_url />",
-	"logo" : "<txp:site_url />img/your-logo.png",
+	"name": "<txp:site_name escape="json" />",
+	"url" : "<txp:site_url escape="json" />",
+	"logo" : "<txp:site_url escape="json" />img\/your-logo.png",
 	"sameAs" : [
-		"https://www.facebook.com/xxx",
-		"https://twitter.com/xxx",
-		"https://plus.google.com/+xxx",
-		"https://www.youtube.com/user/xxx"
+		"https:\/\/www.facebook.com\/xxx",
+		"https:\/\/twitter.com\/xxx",
+		"https:\/\/plus.google.com\/+xxx",
+		"https:\/\/www.youtube.com\/user\/xxx"
 	] 
 	},
 	{
@@ -22,10 +22,10 @@
 		"priceRange": "$10-$60",
 		"servesCuisine": "Burgers, Pizzas",
 		"parentOrganization": {
-		"name" : "<txp:site_name />"
+		"name" : "<txp:site_name escaape="json" />"
 	},
 	"name" : "Your Restaurant Name",
-	"image" : "<txp:site_url />img/your-image.png",
+	"image" : "<txp:site_url escape="json" />img\/your-image.png",
 	"address": {
 		"@type" : "PostalAddress",
 		"streetAddress": "1 The High Street",
@@ -60,16 +60,16 @@
 		"closes": "23:00"
 	}
 	],
-	"hasmap" : "https://www.google.co.uk/maps/place/Buckingham+Palace/@"
+	"hasmap" : "https:\/\/www.google.co.uk\/maps\/place\/Buckingham+Palace\/@"
 	},
 	{
 		"@type": "LocalBusiness",
 		"priceRange": "€10-€60",
 		"parentOrganization": {
-		"name" : "<txp:site_name />"
+		"name" : "<txp:site_name escape="json" />"
 	},
 	"name" : "Your Business Name",
-	"image" : "<txp:site_url />img/your-image.png",
+	"image" : "<txp:site_url escape="json" />img\/your-image.png",
 	"address": {
 		"@type" : "PostalAddress",
 		"streetAddress": "Buckingham Palace",
@@ -103,7 +103,7 @@
 		"closes": "23:00"
 	}
 	],
-	"hasmap" : "https://www.google.co.uk/maps/place/@"
+	"hasmap" : "https:\/\/www.google.co.uk\/maps\/place\/@"
 	}
 	]
 }
