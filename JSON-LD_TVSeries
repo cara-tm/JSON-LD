@@ -2,7 +2,7 @@
 {
 	"@context":"http://schema.org",
 	"@type":"TVSeries",
-	"url":"<txp:permlink />",
+	"url":"<txp:permlink escape="json" />",
 	"contentRating":"16+",
 	"name":"<txp:title />",
 	"description":"<txp:if_description><txp:meta_description format="" escape="json" /><txp:else /><txp:title /></txp:if_description>",
