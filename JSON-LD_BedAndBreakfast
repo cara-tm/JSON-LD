@@ -2,9 +2,9 @@
 {
 	"@context": "http://schema.org",
 	"@type": "BedAndBreakfast",
-	"name": "<txp:site_name />",
-	"url": "<txp:site_url />",
-	"image": "<txp:site_url />img/logo.jpg",
+	"name": "<txp:site_name escape="json" />",
+	"url": "<txp:site_url escape="json" />",
+	"image": "<txp:site_url escape="json" />img\/logo.jpg",
 	"address": {
 		"@type": "PostalAddress",
 		"addressLocality": "Seattle",
