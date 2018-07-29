@@ -2,7 +2,7 @@
 {
     "@context": "https://schema.org",
     "@type": "Photograph",
-    "mainEntityOfPage": "<txp:permlink />",
+    "mainEntityOfPage": "<txp:permlink escape="json" />",
 	"headline": "<txp:title escape="json" />",
 	"datePublished": "<txp:posted gmt="1" format="iso8601" />",
 	"dateModified": "<txp:modified gmt="1" format="iso8601" />",
@@ -10,7 +10,7 @@
 	"keywords": ["<txp:category1 title="1" link="0" />"<txp:if_article_category number="2">, "<txp:category2 title="1" link="0" /></txp:if_article_category>"],</txp:if_article_category><txp:if_article_image>
 	"image": [<txp:images limit="10" break=",">{
 		"@type": "ImageObject",
-		"url": "<txp:image_url />",
+		"url": "<txp:image_url escape="json" />",
 		"height": <txp:image_info type="h" />,
 		"width": <txp:image_info type="w" />
 	}</txp:images>],
@@ -30,7 +30,7 @@
 		"name": "<txp:site_name escape="json" />",
 		"logo": {
 			"@type": "ImageObject",
-			"url": "http://cdn.ampproject.org/logo.jpg",
+			"url": "http:\/\/cdn.ampproject.org\/logo.jpg",
 			"width": 600,
 			"height": 60
 		}
