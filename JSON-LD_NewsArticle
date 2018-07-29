@@ -4,15 +4,15 @@
     "@type": "NewsArticle",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "<txp:permlink />",
+        "@id": "<txp:permlink escape="json" />",
         "inLanguage": "en"
     },
     "publisher": 
     {
-        "url": "<txp:site_url />",
+        "url": "<txp:site_url escape="json" />",
         "logo": {
              "@type": "ImageObject",
-            "url": "<txp:site_url />img/logo-meta.png",
+            "url": "<txp:site_url escaape="json" />img\/logo-meta.png",
             "width": "130",
             "height": "60"
         },
@@ -23,15 +23,15 @@
     "author":
         [
             {
-                "url": "<txp:author link="1" format="url" />",
+                "url": "<txp:author link="1" format="url" escape="json" />",
                 "@type": "Person",
-                "name": "<txp:author this_section="1" title="1" />"
+                "name": "<txp:author this_section="1" title="1" escape="json" />"
             }
         ],
     "headline": "<txp:title escape="json" />",
     <txp:if_article_image>"image": {
         "@type": "ImageObject",
-        "url": "<txp:image_url id='<txp:custom_field name="article_image" />' />",
+        "url": "<txp:image_url id='<txp:custom_field name="article_image" />' escape="json" />",
         "width": "<txp:images id='<txp:custom_field name="article_image" />' limit="1"><txp:image_info type="w" /><txp:images>",
         "height": "<txp:images id='<txp:custom_field name="article_image" />' limit="1"><txp:image_info type="h" /><txp:images>"
     },</txp:if_article_image>
