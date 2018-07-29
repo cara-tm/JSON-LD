@@ -18,7 +18,7 @@
 			"streetAddress": "XXXX"
 		},
         	"priceRange": "€€",
-		"image": "<txp:site_url />img/logo.png"
+		"image": "<txp:site_url />img\/logo.png"
 	},<txp:article limit="10" status="life">
 	{
 		"@type": "Book",
