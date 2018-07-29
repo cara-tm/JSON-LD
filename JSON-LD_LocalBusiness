@@ -1,7 +1,7 @@
 <script type="application/ld+json">
 {
 	"@context": "http://schema.org/",
-	"@id": "<txp:site_url />#localbusiness",
+	"@id": "<txp:site_url escape="json" />#localbusiness",
 	"@type": "LocalBusiness",
 	"name": "<txp:site_name escape="json" />",
 	"address": {
@@ -22,7 +22,7 @@
 		"height": 300,
 		"width": 400
 	},
-	"url": "<txp:site_url />",
+	"url": "<txp:site_url escape="json" />",
 	"priceRange": "€50-€120",
 	"openingHoursSpecification": [
 	{
@@ -47,13 +47,13 @@
 	"hasmap" : "https://www.google.co.uk/maps/place/map-location",
 	"sameAs": [
   /*! Add, delete, set your Social Network links below, then remove this comment line */
-		"//www.facebook.com/your-profile",
-		"//www.twitter.com/your-profile",
-		"//plus.google.com/your-profile"
+		"https:\/\/www.facebook.com\/your-profile",
+		"https:\/\/www.twitter.com\/your-profile",
+		"https:\/\/plus.google.com\/your-profile"
 	],
 	"potentialAction": {
 		"@type": "SearchAction",
-		"target": "<txp:site_url />?q={search_term_string}",
+		"target": "<txp:site_url escape="json" />?q={search_term_string}",
 		"query-input": "required name=search_term_string"
 	}
 }
