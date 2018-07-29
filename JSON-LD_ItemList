@@ -2,12 +2,12 @@
 {
 	"@context": "https://schema.org",
 	"@type": "ItemList",
-	"url": "<txp:permlink />",
+	"url": "<txp:permlink escape="json" />",
 	"itemListElement": [
 		<txp:variable name="JSON_counter" value="0" /><txp:related_articles break=",">{
 		"@type": "ListItem",
 			"position": <txp:variable name="JSON_counter" value='<txp:evaluate query=''<txp:variable name="JSON_counter" /> + 1'' />' /><txp:variable name="JSON_counter" />,
-			"url": "<txp:permlink />"
+			"url": "<txp:permlink escaape="json" />"
 		}</txp:related_articles>
 	]
 }
