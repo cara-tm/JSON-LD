@@ -8,7 +8,7 @@
 		"@type": "ListItem", 
 		"position": <txp:variable name="JSON_counter" value='<txp:evaluate query=''<txp:variable name="JSON_counter" /> + 1'' />' /><txp:variable name="JSON_counter" />, 
 		"item": { 
-			"@id": "<txp:section url="1" />", 
+			"@id": "<txp:section url="1" escape="json" />", 
 			"name": "<txp:section title="1" escape="json" />" 
 		}
 	}</txp:section_list>
