@@ -2,17 +2,17 @@
 {
 	"@context": "http://schema.org/",
 	"@type": "Person",
-	"image": "<txp:site_url />img/<txp:php>
+	"image": "<txp:site_url escape="json" />img\/<txp:php>
 	/*! Set the author's image with its lowercase name (default: JPG format or change the extention) */
 	echo stripSpace(author(array()), 1);
 	</txp:php>.jpg",
 	"name": "<txp:authors limit="1" offset="1" wraptag="" break=""><txp:author /></txp:authors>",
 	"email": "<txp:author_email />",
-	"url": "<txp:author format="url" />"
+	"url": "<txp:author format="url" escape="json" />"
 /*! Set the colleague URLs here or delete this part
 	,"colleague": [
-		"http://www.example.com/JohnColleague.html",
-		"http://www.example.com/JameColleague.html"
+		"http:\/\/www.example.com\/JohnColleague.html",
+		"http:\/\/www.example.com\/JameColleague.html"
       ],
 */
 }
