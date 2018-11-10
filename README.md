@@ -34,6 +34,7 @@ Note: check the snippet content and replace the `XXXX` where signs appaer by the
 + **JSON-LD_Place**: a data graph for business location.
 + **JSON-LD_ProfessionalService**: a data graph for displaying professional services and offers.
 + **JSON-LD_Restaurant**: a data graph suitable for a restaurant.
++ **JSON-LD_TVSeries**: a data graph for broadcasting and tv series.
 + **JSON-LD_WebPage**: a data graph for general purpose web pages.
 + **JSON-LD_Website**: a general purpose for personal websites with the website's author name and its URL, social network's list of links, technological skills and the search page which Google can adds into the SERP.
 
