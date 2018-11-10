@@ -1,0 +1,62 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/", 
+  "@type": "ProfessionalService", 
+  "name": "<txp:site_name />", 
+  "address": { 
+    "@type": "PostalAddress", 
+    "addressCountry": "XXX", 
+    "addressLocality": "XXX", 
+    "addressRegion": "XXX", 
+    "postalCode":"XXXXX", 
+    "streetAddress": "XXX" 
+   }, 
+   "url": "<txp:site_url />", 
+   "description": "<txp:site_slogan />", 
+   "founder": "XXX", 
+   "email" : "mailto:recipient@example.com", 
+   "telephone": "+33-XXX-XXX-XXXX",
+   "image": { 
+    "@type": "ImageObject", 
+    "url": "<txp:site_url />img/logo.png", 
+    "height": 60, 
+    "width": 60 
+   }, 
+   "currenciesAccepted": "€", 
+   "priceRange": "€€€€", 
+   "paymentAccepted": "Cash, Credit Card, Bank Transfer", 
+   "sameAs": [ 
+    "//twitter.com/XXX", 
+    "//github.com/XXX", 
+    "//plus.google.com/XXX", 
+    "//www.instagram.com/XXX", 
+    "//ello.co/XXX" 
+   ], 
+   "makesOffer" : {
+    "@type" : "Offer", 
+    "itemOffered" : [
+      { 
+        "@type" : "Product", 
+        "name" : "Web Development" 
+      },
+      { 
+        "@type" : "Product", 
+        "name" : "Textpattern CMS Specialist"
+      },
+      { 
+        "@type" : "Product", 
+        "name" : "Search Engines Optimisation" 
+      }, 
+      { 
+        "@type" : "Product", 
+        "name" : "Front Optimizer Specialist" 
+      } 
+    ] 
+    }, 
+    "potentialAction": { 
+      "@type": "SearchAction", 
+      "target": "<txp:site_url />?q={search_term_string}", 
+      "query-input": "required name=search_term_string" 
+    }
+}
+</script>
