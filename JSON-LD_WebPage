@@ -29,9 +29,7 @@
             "name": "<txp:site_name escape="json" />",
             "logo": {
                 "@type": "imageObject",
-                "url": "<txp:site_url escape="json" />img\/logo.png",
-                "height": "60",
-                "width": "160"
+                "url": "<txp:site_url escape="json" />img\/logo.png"
             }
         }
     }
