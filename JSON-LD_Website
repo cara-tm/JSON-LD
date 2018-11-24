@@ -9,15 +9,15 @@
 		"@type": "Person",
 		"name": "<txp:author />",
 		"url": "<txp:if_article_list><txp:site_url escape="json" /><txp:else /><txp:author format="url" link="1" escape="json" /></txp:if_article_list>",
-		"sameAs": [
-/*! Add, delete, set your Social Network links below, then remove this comment line */
+		/*! Add, delete, set your Social Network links below, then remove this comment line 
+		,"sameAs": [
 			"https:\/\/www.facebook.com\/your-profile",
 			"https:\/\/twitter.com\/your-profile",
 			"https:\/\/github.com\/your-profile",
 			"https:\/\/plus.google.com\/your-profile",
 			"https:\/\/in.linkedin.com\/in\/your-profile",
 			"https:\/\/www.youtube.com\/user\/your-profile"
-		]
+		] */
 /*! Your skills here or remove this commented part
 		,"makesOffer" : {
 			"@type" : "Offer",
@@ -33,11 +33,11 @@
 			]
 		}
 */
-	},
-	"potentialAction": {
+	}
+	<txp:if_section name="">,"potentialAction": {
 		"@type": "SearchAction",
 		"target": "<txp:site_url escape="json" />?q={search_term_string}",
 		"query-input": "required name=search_term_string"
-	},
+	}</txp:if_section name="">
 }   
 </script>
