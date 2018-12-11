@@ -42,9 +42,7 @@
 		"name": "<txp:site_name escape="json" />",
 		"logo": {
 			"@type": "ImageObject",
-			"url": "http://cdn.ampproject.org/logo.jpg",
-			"width": 600,
-			"height": 60
+			"url": "http://cdn.ampproject.org/logo.jpg"
 		}
 	}
 }
