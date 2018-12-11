@@ -7,7 +7,7 @@
 	"datePublished": "<txp:posted gmt="1" format="iso8601" />",
 	"dateModified": "<txp:modified gmt="1" format="iso8601" />",
     "description": "<txp:if_description><txp:meta_description escape="json" format="" /><txp:else /><txp:if_excerpt><txp:excerpt escape="json" /><txp:else /><txp:title /></txp:if_excerpt></txp:if_description>",<txp:if_article_category>
-	"keywords": ["<txp:category1 title="1" link="0" />"<txp:if_article_category number="2">, "<txp:category2 title="1" link="0" /></txp:if_article_category>"],</txp:if_article_category><txp:if_article_image>
+	"keywords": ["<txp:category1 title="1" link="0" />"<txp:if_article_category number="2">, "<txp:category2 title="1" link="0" />"</txp:if_article_category>],</txp:if_article_category><txp:if_article_image>
 	"image": [<txp:images limit="10" break=",">{
 		"@type": "ImageObject",
 		"url": "<txp:image_url escape="json" />",
