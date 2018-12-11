@@ -19,7 +19,7 @@
 	"dateModified": "<txp:modified gmt="1" format="iso8601" />",
 	"description": "<txp:if_variable name="description" value=""><txp:excerpt escape="p,tidy" format="json" /><txp:else /><txp:variable name="description" /></txp:if_variable>",
 	"articleSection": "<txp:section title="1" escape="json" />",
-	<txp:if_article_category>"keywords": ["<txp:category1 title="1" link="0" />"<txp:if_article_category number="2">, "<txp:category2 title="1" link="0" /></txp:if_article_category>"],</txp:if_article_category>
+	<txp:if_article_category>"keywords": ["<txp:category1 title="1" link="0" />"<txp:if_article_category number="2">, "<txp:category2 title="1" link="0" />"</txp:if_article_category>],</txp:if_article_category>
 	"image": <txp:if_article_image><txp:images limit="1">{
 		"@type": "ImageObject",
 		"url": "<txp:image_url />",
