@@ -11,7 +11,7 @@
 // Remove these comment lines.
 //
 {<txp:variable name="description" value='<txp:meta_description format="" escape="json" />' />
-	"@context": "http://schema.org",
+	"@context": "http:\/\/schema.org",
 	"@type": "BlogPosting",
 	"mainEntityOfPage": "<txp:permlink />",
 	"headline": "<txp:title escape="json" />",
@@ -31,18 +31,18 @@
 		"name": "<txp:author title="1" escape="json" />"
 	},
 	<txp:if_comments>"commentCount": <txp:comments_count />,
-<txp:comments form="" wraptag="" break="" class="">	"comment": {
-		"text": "<txp:comment_message escape="tidy,p" format="json" />",
+	"comment": [ <txp:comments form="" wraptag="" break="," class="">{
+		"text": "<txp:comment_message escape="tidy,p,br" format="json" />",
 		"author": {
 			"@type": "Person",
 			"name": "<txp:comment_name link="0" escape="json" />"
 		}
-	},</txp:comments></txp:if_comments>	"publisher": {
+	}</txp:comments>],</txp:if_comments>	"publisher": {
 		"@type": "Organization",
 		"name": "<txp:site_name escape="json" />",
 		"logo": {
 			"@type": "ImageObject",
-			"url": "http://cdn.ampproject.org/logo.jpg"
+			"url": "http://<txp:site_url escape="json" />logo.jpg"
 		}
 	}
 }
