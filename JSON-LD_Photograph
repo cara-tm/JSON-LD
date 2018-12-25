@@ -18,14 +18,7 @@
 		"@type": "Person",
 		"name": "<txp:author title="1" escape="json" />"
 	},
-	<txp:if_comments>"commentCount": <txp:comments_count />,
-<txp:comments form="" wraptag="" break="" class="">	"comment": {
-		"text": "<txp:comment_message escape="json" />",
-		"author": {
-			"@type": "Person",
-			"name": "<txp:comment_name link="0" escape="json" />"
-		}
-	},</txp:comments></txp:if_comments>	"publisher": {
+	"publisher": {
 		"@type": "Organization",
 		"name": "<txp:site_name escape="json" />",
 		"logo": {
