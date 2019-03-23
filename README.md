@@ -1,4 +1,4 @@
-# JSON-LD
+# ❴❵ JSON-LD
 JSON-LD structured data snippets collection for Textpattern CMS
 
 Hight quality handcrafted codes collection. All snippets has been tested successfully with the "OpenLink Structured Data Sniffer" browser extension and within the official "Structured Data Testing Tool" by Google. Multiple case studies for your conveniences. No headaches; just copy/paste!
