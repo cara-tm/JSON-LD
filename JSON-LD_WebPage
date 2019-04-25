@@ -22,7 +22,7 @@
         },</txp:images></txp:if_article_image>
         "author": {
             "@type": "Organization",
-            "name": "<txp:meta_author format="" title="1" escape="json" />"
+            "name": "<txp:authors group="1"><txp:author format="" link="" title="1" escape="json" /></txp:authors>"
         },</txp:if_individual_article>
         "publisher": {
             "@type": "Organization",

@@ -7,7 +7,7 @@
 	"description": "<txp:site_slogan escape="json" />",
 	"creator" : {
 		"@type": "Person",
-		"name": "<txp:author />",
+		"name": "<txp:authors group="1"><txp:author format="" link="" title="1" escape="json" /></txp:authors>",
 		"url": "<txp:if_article_list><txp:site_url escape="json" /><txp:else /><txp:author format="url" link="1" escape="json" /></txp:if_article_list>",
 		/*! Add, delete, set your Social Network links below, then remove this comment line 
 		,"sameAs": [
